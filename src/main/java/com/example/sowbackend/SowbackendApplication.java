@@ -8,7 +8,7 @@ public class SowbackendApplication {
 
 	public static void main(String[] args) {
 		
-		//Main class
+		//Main class by sai
 		SpringApplication.run(SowbackendApplication.class, args);
 	}
 
