@@ -18,6 +18,6 @@ public class SowController {
 
     @PostMapping("/sowDetails")
     public String getSowDetails(@RequestBody SowDetails sowDetails){
-        return sowService.savedetails(sowDetails);
+        return sowService.saveDetails(sowDetails);
     }
 }

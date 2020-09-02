@@ -4,16 +4,14 @@ package models;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import java.util.Date;
+
 
 @Entity
-@Table(name = "sowdetails_table")
 public class SowDetails {
 
     @Id
     @Column(name= "sowID")
-        private String sowID;
+    private long sowID;
 
     @Column(name ="date")
     private String date;
@@ -21,11 +19,11 @@ public class SowDetails {
     @Column(name = "Owner")
     private String owner;
 
-    public String getSowID() {
+    public long getSowID() {
         return sowID;
     }
 
-    public void setSowID(String sowID) {
+    public void setSowID(long sowID) {
         this.sowID = sowID;
     }
 
@@ -43,8 +41,5 @@ public class SowDetails {
 
     public void setOwner(String owner) {
         this.owner = owner;
-    }
-
-    public SowDetails() {
     }
 }

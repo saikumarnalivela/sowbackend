@@ -9,10 +9,12 @@ import repositories.SowRepo;
 public class SowService {
 
     @Autowired
-    private SowRepo sowrepository;
+    public SowRepo sowrepository;
 
-    public String savedetails(SowDetails sowdetails){
-        sowrepository.save(sowdetails);
+
+
+    public String saveDetails(SowDetails sowdetails){
+        this.sowrepository.save(sowdetails);
         return "Details are saved";
     }
 }
